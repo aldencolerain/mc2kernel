@@ -1,4 +1,14 @@
-        Linux kernel release 3.x <http://kernel.org/>
+MC2KERNEL
+
+This is a fork of the Marvell Linux Kernel customized for use on the WD My 
+Cloud 2 Gen. For ease of use the Marvell Arm Toolchain, build script and 
+kernel config are added to the repository as well. This is build of the 
+incredible work of Fox_exe. He has done all of the groud work, which you
+can check out in the WD Forums.
+
+--------------------------------------------------------------------------
+
+Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
 as they tell you what this is all about, explain how to install the
