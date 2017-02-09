@@ -4,7 +4,14 @@ This is a fork of the Marvell Linux Kernel customized for use on the WD My
 Cloud 2 Gen. For ease of use the Marvell Arm Toolchain, build script and 
 kernel config are added to the repository as well. This is build of the 
 incredible work of Fox_exe. He has done all of the groud work, which you
-can check out in the WD Forums.
+can check out in the WD Forums.  This work is also derived from the 
+generous open sourced Western Digial code.
+
+Fox_exe's firmware discussion:
+https://community.wd.com/t/clean-os-debian-openmediavault-and-other-firmwares/93714
+
+WD My Cloud GPL Code:
+http://downloads.wdc.com/gpl/WD_MyCloud_GPL_v2.21.126_20161110.zip
 
 --------------------------------------------------------------------------
 
