@@ -24,7 +24,7 @@
 
 	memory {
 		device_type = "memory";
-		reg = <0x00000000 0x20000000>; /* 512 MB */
+		reg = <0x00000000 0x40000000>; /* 1 GB */
 	};
 
 	soc {
@@ -61,7 +61,7 @@
 			};
 
 			ethernet@c5000 {
-				status = "okay"; //BLUE_ADD
+				status = "okay";
 				phy = <&phy3>;
 				phy-mode = "mii";
 			};
@@ -77,23 +77,23 @@
 			};
 
 			i2c0: i2c@11000 {
+				status = "okay";
 				clock-frequency = <100000>;
 				pinctrl-0 = <&i2c0_pins>;
 				pinctrl-names = "default";
-				status = "disabled";
 			};
 
 			i2c1: i2c@11100 {
+				status = "okay";
 				clock-frequency = <100000>;
 				pinctrl-0 = <&i2c1_pins>;
 				pinctrl-names = "default";
-				status = "disabled";
 			};
 
 			mvsdio@d4000 {
 				pinctrl-0 = <&sdio_pins &sdio_st_pins>;
 				pinctrl-names = "default";
-				status = "disabled";
+				status = "okay";
 				cd-gpios = <&gpio1 12 0>;
 				wp-gpios = <&gpio1 13 0>;
 			};
@@ -121,7 +121,6 @@
 
 			serial@12000 {
 				status = "okay";
-				clocks = <&coreclk 0>;
 			};
 
 			spi0: spi@10600 {
@@ -146,7 +145,7 @@
 			nand: nand@d0000 {
 				pinctrl-0 = <&nand_pins>;
 				pinctrl-names = "default";
-				status = "disabled";
+				status = "okay";
 
 				nfc,nfc-mode  = "normal";	/* normal or ganged */
 				nfc,nfc-dma   = <0>;		/* 0 for no, 1 for dma */
@@ -201,11 +200,11 @@
 			 */
 			pcie@1,0 {
 				/* Port 0, Lane 0 */
-				status = "disabled";
+				status = "okay";
 			};
 			pcie@2,0 {
 				/* Port 1, Lane 0 */
-				status = "disabled";
+				status = "okay";
 			};
 		};
 	};
