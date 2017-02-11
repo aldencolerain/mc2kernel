@@ -1,7 +1,10 @@
 #!/bin/sh
 
-# build kernel
+# setup
 cp kernel.config .config
+rm -r output/*
+
+# build kernel
 make CROSS_COMPILE=toolchain/bin/arm-marvell-linux-gnueabi- ARCH=arm menuconfig
 make CROSS_COMPILE=toolchain/bin/arm-marvell-linux-gnueabi- ARCH=arm zImage
 make CROSS_COMPILE=toolchain/bin/arm-marvell-linux-gnueabi- ARCH=arm armada-375-wdmc-gen2.dtb
